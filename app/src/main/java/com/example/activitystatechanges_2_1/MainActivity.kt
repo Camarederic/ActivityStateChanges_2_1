@@ -16,9 +16,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        outState.run {
-            putString("KEY", textViewHello.text.toString())
-        }
+        outState.putString("KEY", textViewHello.text.toString())
+
 
         super.onSaveInstanceState(outState)
     }
